@@ -1,5 +1,0 @@
---color
---default-path test
---format documentation
---order random
---require spec_helper
