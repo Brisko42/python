@@ -1,0 +1,29 @@
+vagrant init : Initialise un nouveau projet Vagrant. Cela crée un fichier Vagrantfile dans le répertoire actuel.
+
+vagrant up : Démarre et configure la machine virtuelle en fonction du Vagrantfile. C'est la commande que vous utilisez pour lancer une machine virtuelle.
+
+vagrant ssh : Se connecte à la machine virtuelle via SSH. Cela permet d'accéder à l'interface en ligne de commande de la machine virtuelle.
+
+vagrant halt : Arrête la machine virtuelle en cours d'exécution. Cela équivaut à éteindre la machine de manière ordonnée.
+
+vagrant reload : Redémarre et recharge le Vagrantfile. Utile si vous avez apporté des modifications au Vagrantfile.
+
+vagrant provision : Exécute le script de provisionnement sur une machine déjà en cours d'exécution. Cela est souvent utilisé pour appliquer des modifications de configuration.
+
+vagrant destroy : Arrête la machine virtuelle en cours d'exécution et la supprime. Toutes les ressources utilisées par la machine sont libérées.
+
+vagrant status : Affiche l'état de la machine virtuelle.
+
+vagrant suspend : Met la machine virtuelle en veille (suspend son état).
+
+vagrant resume : Reprend une machine virtuelle suspendue.
+
+vagrant box add : Ajoute une box à votre installation de Vagrant. Une box est le package de base pour créer une machine virtuelle.
+
+vagrant box list : Liste toutes les boxes installées sur votre système.
+
+vagrant box update : Met à jour les boxes installées.
+
+vagrant box remove : Supprime une box installée.
+
+vagrant plugin : Gère les plugins de Vagrant. Peut être utilisé pour installer, mettre à jour ou supprimer des plugins.
