@@ -1,0 +1,29 @@
+"""
+un script Python qui affiche des informations de base sur le système,
+telles que le nom d'hôte, l'adresse IP, l'architecture du processeur et la version du
+système d'exploitation
+
+"""
+import platform
+import socket
+
+def system_info():
+    # Nom d'hôte
+    hostname = socket.gethostname()
+
+    # Adresse IP
+    ip_address = socket.gethostbyname(hostname)
+
+    # Architecture du processeur
+    processor_architecture = platform.processor()
+
+    # Version du système d'exploitation
+    os_version = platform.system() + " " + platform.release()
+
+    # Affichage des informations
+    print(f"Nom d'hôte : {hostname}")
+    print(f"Adresse IP : {ip_address}")
+    print(f"Architecture du processeur : {processor_architecture}")
+    print(f"Version du système d'exploitation : {os_version}")
+
+system_info()
